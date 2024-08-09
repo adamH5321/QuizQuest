@@ -37,16 +37,16 @@ document.addEventListener('DOMContentLoaded', () => {
             ]
         },
         {
-            question: "David has 34 marbles. He wants to share them equally with 4 friends. How many marbles will each friend get?",
+            question: "David has 48 marbles. He wants to share them equally with 4 friends. How many marbles will each friend get?",
             answers: [
-                { text: "6 marbles", correct: false },
-                { text: "7 marbles", correct: true },
-                { text: "8 marbles", correct: false },
-                { text: "9 marbles", correct: false }
+                { text: "16 marbles", correct: false },
+                { text: "12 marbles", correct: true },
+                { text: "10 marbles", correct: false },
+                { text: "8 marbles", correct: false }
             ]
         },
         {
-            question: "A rectangular garden is 7 meters long and 5 meters wide. What is the perimeter of the garden (the total length of all the sides added together)?",
+            question: "A rectangular garden is 7 meters long and 5 meters wide. What is the perimeter of the garden ?",
             answers: [
                 { text: "12 meters", correct: false },
                 { text: "24 meters", correct: true },
