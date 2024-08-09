@@ -1,0 +1,92 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333333;
+}
+
+.quiz-container {
+    width: 100%;
+    max-width: 800px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.quiz-container h2 {
+    font-size: 2rem;
+    color: #4682b4; /* Same color as the questions */
+}
+
+#question-tracker {
+    font-size: 1rem;
+    color: #333333;
+    
+    margin-bottom: 10px;
+    }
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ff6347; /* Match the main title color */
+}
+
+#question-container {
+    margin-bottom: 20px;
+}
+
+#question {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #4682b4; /* Match the "Choose your Category!" color */
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+}
+
+.btn {
+    background-color: #4682b4; /* Base color for options */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn.correct {
+    background-color: #32cd32; /* Green for correct answers */
+}
+
+.btn.wrong {
+    background-color: #ff0000; /* More red for wrong answers */
+}
+
+
+
+.hide {
+    display: none;
+}
+#exit-btn {
+    margin-right: 10px; /* Add margin to the right of the "Exit" button */
+}
+
+#next-level-btn {
+    margin-left: 10px; /* Add margin to the left of the "Next Level" button */
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz.css">
+    <title>QuizQuest Math - Medium</title>
+</head>
+<body>
+    <div class="quiz-container">
+        <header>
+            <h1>QuizQuest</h1>
+            <h2>Math - Medium</h2>
+        </header>
+        <div id="question-container">
+            <div id="question-tracker">Question 1 of 10</div>
+            <div id="question">Question text</div>
+            <div id="answer-buttons" class="btn-grid"></div>
+        </div>
+        <button id="next-btn" class="btn hide">Next</button>
+    </div>
+    <!-- Add audio elements for sound effects -->
+    <audio id="correct-sound" src="sounds/correct.mp3" preload="auto"></audio>
+    <audio id="wrong-sound" src="sounds/wrong.mp3" preload="auto"></audio>
+    <script src="math-medium.js"></script>
+</body>
+</html>

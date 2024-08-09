@@ -1,0 +1,117 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333333;
+    margin: 0;
+}
+
+.container {
+    width: 90%; /* Reduce to 90% to add some padding on smaller screens */
+    max-width: 800px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem; /* Reduced font size for smaller screens */
+    color: #ff6347;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 1.25rem; /* Adjusted for better scaling */
+    color: #4682b4;
+    margin-bottom: 20px;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: center;
+    gap: 20px; /* Adjust gap to fit more content on smaller screens */
+}
+
+.category {
+    flex: 1 1 200px; /* Allow each category to shrink and grow */
+    background-color: #32cd32;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s, max-height 0.5s ease-in-out;
+    font-size: 1.1rem; /* Reduced font size for better fit */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    max-height: 60px;
+    text-align: center;
+}
+
+.category:hover {
+    transform: translateY(-5px);
+    background-color: #2eb82e;
+}
+
+.category.expand {
+    max-height: 200px;
+    padding-bottom: 40px;
+}
+
+.category span {
+    display: block;
+    padding-bottom: 10px;
+}
+
+.difficulties {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+.category.expand .difficulties {
+    opacity: 1;
+}
+
+.difficulty {
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.difficulty:hover {
+    color: black;
+}
+
+/* Specific Category Colors */
+.category.math {
+    background-color: #ff4500;
+}
+
+.category.math:hover {
+    background-color: #e03d00;
+}
+
+.category.geography {
+    background-color: #1e90ff;
+}
+
+.category.geography:hover {
+    background-color: #1c86ee;
+}
